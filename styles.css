@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    overflow-y: hidden;
+}
+
+#info {
+    position: absolute;
+    left: 0px;
+    /* 左からの位置指定 */
+    top: 0px;
+    /* 上からの位置指定 */
+}
+
+.topLeft {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.listElement{
+    position:relative;
+    background:gray;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 2px;
+}
+.listElement:hover {
+    background-color: #ffdaf8;
+}
+.listElement.select {
+    background-color: #80a0e6;
+}
+
+.listElement p{
+    position:absolute;
+    width: 70px;
+    height: 20px;
+    align-items: center;
+
+	display: block;
+
+}
+
+#state{
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+#flex {
+    position: absolute;
+    left: 0px;
+    /* 左からの位置指定 */
+    top: 0px;
+
+    width: fit-content;
+    height: fit-content;
+
+    /* 水平垂直方向にリサイズ可能 */
+    resize: both;
+
+    /* resizeを指定するため 'visible'以外を指定 */
+    overflow: hidden;
+}
+
+table{
+    table-layout: fixed;
+}
+
+table tr td:hover {
+    background-color: #ffdaf8;
+}
+
+table,
+td {
+    border: 1px solid #333;
+    width: 64px;
+    height: 64px;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
